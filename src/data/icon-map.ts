@@ -1,0 +1,47 @@
+import {
+  BarChart3,
+  Calendar,
+  ChefHat,
+  Clock,
+  Component,
+  Database,
+  LayoutDashboard,
+  Layers,
+  Leaf,
+  PartyPopper,
+  Rocket,
+  ShieldCheck,
+  Sparkle,
+  Sparkles,
+  Store,
+  Users,
+  Utensils,
+  UtensilsCrossed,
+  Zap,
+  type LucideIcon,
+} from "lucide-react";
+
+const iconMap: Record<string, LucideIcon> = {
+  zap: Zap,
+  database: Database,
+  layers: Layers,
+  rocket: Rocket,
+  sparkles: Sparkles,
+  sparkle: Sparkle,
+  utensils: Utensils,
+  "utensils-crossed": UtensilsCrossed,
+  "chef-hat": ChefHat,
+  calendar: Calendar,
+  leaf: Leaf,
+  component: Component,
+  "bar-chart": BarChart3,
+  users: Users,
+  store: Store,
+  "shield-check": ShieldCheck,
+  clock: Clock,
+  "party-popper": PartyPopper,
+  dashboard: LayoutDashboard,
+};
+
+export const resolveIcon = (icon: string): LucideIcon =>
+  iconMap[icon] ?? LayoutDashboard;
