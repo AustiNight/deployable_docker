@@ -7,7 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { useAuthStore } from "@/state/auth-store";
 import { useContentStore } from "@/state/content-store";
-import { cn } from "@/utils/cn";const activeLinkClass =
+import { cn } from "@/utils/cn";
+
+const activeLinkClass =
   "text-foreground after:absolute after:inset-x-0 after:-bottom-2 after:h-0.5 after:rounded-full after:bg-primary";
 
 export const SiteHeader = () => {

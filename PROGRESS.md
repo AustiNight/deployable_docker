@@ -9,7 +9,7 @@
 ## Outstanding Work
 - None at the moment.
 
-## Latest Update (2025-10-23)
+## Previous Update (2025-10-23)
 - Reordered imports in `protected-route`, `theme-provider`, and `theme-toggle`; fixed the stray literal in `theme-toggle`.
 - Reworked `DashboardPage` logout handling to keep click handlers synchronous while safely awaiting store actions.
 - Migrated `postcss.config` to ESM, renamed layout toggle types to avoid collisions, and rebuilt the theme controls module with clearer typing.
@@ -19,5 +19,12 @@
 
 ## Suggested Next Steps
 1. Proceed with commit/release or any feature work now that the pipeline is green.
+
+## Latest Update (2025-10-30)
+- Cleaned up remaining ESLint blockers by correcting escaped JSX strings in the smoke scaffolds and tightening placeholder typing so lint passes without warnings.
+- Rebuilt the theme stack to support light/dark/system modes: the provider now persists preferences safely, exposes the resolved mode, and keeps the document color scheme and data attributes in sync.
+- Extended palette tokens with dark variants, updated the theme application hook to drive all CSS variables (background, popover, destructive, accent) per mode, and refreshed the toggle UI to surface system state.
+- Touched supporting docs to call out dark mode availability; UI (header, dashboard, seeded pages) inherits the new variables automatically.
+- Validation: npm run lint, npm run typecheck, npm run build. Docker compose not re-run in this session.
 
 

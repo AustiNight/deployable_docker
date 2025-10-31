@@ -8,7 +8,7 @@
 - **Client-side persistence helpers** – `usePersistedState`, IndexedDB utilities, reset hooks, and `zustand` stores.
 - **Seeded content & templates** – restaurant, portfolio, and marketplace variants with themed assets and fixtures.
 - **Content dashboard** – live editing of navigation, hero, CTA, features, contact data, layout toggles, and theme tokens.
-- **Theme system** – preset gallery, palette/accent/font controls, CSS variable sync, and Web Animations API reveal hooks.
+- **Theme system** — preset gallery, palette/accent/font controls, dark/system mode handling, CSS variable sync, and Web Animations API reveal hooks.
 - **CLI generators** – `npm run generate:page` and `npm run generate:component` scaffolding commands.
 - **Docker-first workflow** – development target and production preview baked into the `Dockerfile` and `docker-compose.yml`.
 - **CI-ready** – npm scripts for `lint`, `typecheck`, `build`, plus a GitHub Actions skeleton under `.github/workflows/ci.yml`.
